@@ -1,11 +1,11 @@
-import Block from "../shared/Block";
-import Blockchain from "../shared/Blockchain";
-import CoinbaseTransaction from "../shared/CoinbaseTransaction";
-import GenesisBlock from "../shared/GenesisBlock";
-import Mempool from "../shared/Mempool";
-import Transaction from "../shared/Transaction";
-import getSHA256Hash from "../shared/cryptoHash";
-import Wallet from "../shared/Wallet";
+import Block from "./Block";
+import Blockchain from "./Blockchain";
+import CoinbaseTransaction from "./CoinbaseTransaction";
+import GenesisBlock from "./GenesisBlock";
+import Mempool from "./Mempool";
+import Transaction from "./Transaction";
+import getSHA256Hash from "./cryptoHash";
+import Wallet from "./Wallet";
 import { 
     BLOCK_SUBSIDY, 
     COINBASE_TX, 
@@ -13,8 +13,8 @@ import {
     INITIAL_DIFFICULTY, 
     NUM_OF_BLOCKS_TO_HALF_MINING_REWARD, 
     TARGET_MINE_RATE_MS
-} from "../shared/config"; 
-import { BlockType, TransactionType } from "../shared/types";
+} from "./config"; 
+import { BlockType, TransactionType } from "./types";
 
 export {
     Block,

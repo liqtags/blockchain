@@ -1,5 +1,9 @@
 # Blockchain
 
+## Env values 
+- COINBASE_TX_FROM_ADDRESS: Coinbase TX from address
+- COINBASE_TX_SECRET_KEY: Coinbase TX Secret key
+
 ## Configuration
 - BLOCK_SUBSIDY: The initial block reward for miners.
 - COINBASE_TX: Configuration for coinbase transactions.
