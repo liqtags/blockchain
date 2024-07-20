@@ -1,4 +1,4 @@
-import EC from "elliptic"
+import * as EC from "elliptic"
 import { BlockType, TransactionType } from "./types";
 
 const ec = new EC.ec('secp256k1')

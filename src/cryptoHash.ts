@@ -1,4 +1,4 @@
-import crypto from 'crypto'
+import * as crypto from 'crypto'
 
 const getSHA256Hash = (...inputs: any[]) => {
   const stringArray = inputs.map(input => JSON.stringify(input))

@@ -12,7 +12,6 @@ import Blockchain from "./Blockchain";
 class Mempool {
   pendingTransactions: Transaction[];
   blockchain: Blockchain;
-  //need to pick one source of truth for difficulty and blocksubsidy between this and blockchain- prob here
   constructor(blockchain: Blockchain) {
     this.pendingTransactions = [];
     this.blockchain = blockchain;
@@ -62,7 +61,6 @@ class Mempool {
     this.pendingTransactions.push(transaction);
   }
 
-  //Transaction helpers:
   addCoinbaseTxToMempool(miningRewardAddress: string): Transaction[] {
     const coinbaseTx = new CoinbaseTransaction(
       miningRewardAddress,
@@ -93,7 +91,6 @@ class Mempool {
   }
 
   getNewMiningDifficulty(): number {
-    //More secure would be to use a moving average of the last difference in timestamps of last 10 blocks or so. But requires enough nodes so there are constantly new blocks being mined back to back
     const lastMiningTime = this.blockchain.getLatestBlock().miningDurationMs;
 
     let difficulty = this.blockchain.getLatestBlock().difficulty;

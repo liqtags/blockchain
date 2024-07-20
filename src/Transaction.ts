@@ -1,5 +1,5 @@
 import { v4 as uuidv4 } from "uuid";
-import EC from "elliptic";
+import * as EC from "elliptic";
 const ec = new EC.ec("secp256k1");
 import getSHA256Hash from "./cryptoHash";
 
