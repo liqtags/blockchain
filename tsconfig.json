@@ -1,0 +1,11 @@
+{
+  "extends": "@liqtags/typescript-config/base.json",
+  "compilerOptions": {
+    "lib": ["ES2015"],
+    "outDir": "./dist",
+    "types": ["jest", "node"],
+    "strict": false
+  },
+  "include": ["."],
+  "exclude": ["node_modules", "dist", "bin"],
+}
